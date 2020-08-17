@@ -1,0 +1,67 @@
+Constructor:
+
+Constructor is called as block of code which get exeucuted  as soon as when an object is created to the class.
+
+By default there will be  no arg constructor created in the background.
+
+This constructor works like a place holder to pass the data into a class.
+This constrcutor will intialize the class level variables, if the variables are declared but not intialized, then this constructor will set to the default values.
+Constructor can not return a value
+Constructor name must be always as the name of the class.
+
+syntax:
+
+ClassName(){
+
+
+}
+
+The constructor might be a private , public, protected and default.
+
+
+when the user create a constructor, the default constructor will be removed.
+
+
+Constructor can be overloaded.
+
+here overloaded means , with different args
+
+when the class level variable and constrcutor level variables having same name available, the prefference is given to the constructor level variables
+
+now to differentiate classlevel variables and local level variables, use the keyword called this.
+
+this is a keyword which is used to represent the current class variables and methods
+
+
+
+can i call a constructor from another constrcutor?
+yes we can call another constructor from any constructor using a method called this(), by passing matching arguments
+
+ensure that the calling statement this() is always a first statement inside the constructor.
+
+Recursive is not possible in constructor
+
+
+
+understand about static block and instancd block
+
+static{}
+
+{}
+
+static block will called when we load a class
+instance block will call when we create an object to the class
+
+
+
+-----Review
+
+components of a class
+
+1.variables
+2.methods
+3.constructor
+4.static and instance
+
+
+OOPS Implementation

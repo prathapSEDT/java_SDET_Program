@@ -1,0 +1,66 @@
+Why multiple inheritance is not possible in java?
+
+Generally in java the basic rule is that a class can not extend not more than one class
+
+so having this as principle, java multiple inheritance is not achived.
+
+to over come that problem, interfaces are introduced.
+
+interaces will have only  method names with out any implementation
+
+interfaces will be used for the purpose of security in the application development
+
+
+user must list down all the methods taht what he need to develop, then user needs to create a class and impement the interface
+
+it means that a class can implement an interace, not only one but many
+
+with this improvemnt, we can achive multiple inheritance.
+
+
+a class can implement any number of interfaces
+a class can exetend only one class
+a class can not exetend an interface
+a interace can extend any interface
+
+
+Note:
+when you implement any interface , the class will force you to write the definition logic of each method available on the interface.
+
+how to create an interface?
+
+interface Interfacename{
+
+void add();
+
+int sub();
+
+}
+
+
+
+When the implemented class is having any new method available, which is not available at interface, such methods can not be accessble by using the relation
+
+Parent p=new Child();
+
+There is no relation called , Child c=new Parent();
+
+
+Scenario:
+I have a interface with 5 methods, i want to write a logic only to the 3 methods inside my implementation class., is it possible?
+
+Yes it is possible, by making the class type abstract class.
+
+when we make a class as an abstarct it is called as an incomplete class
+in java, when the class type is abstract, user is not suppose to create an object.
+
+
+i have a class with out implementation of any interface, is it possible to make a class to be as an abstract?
+Yes.
+
+When i have an abstract class with out any interface is it mandatory to have all the time abstarct methods? 
+No, we can have both abstarct and non abstarct metods
+
+Can i craete abstarct methods inside a abstract class?
+Yes, we can but remember we should need to give keyword called, abstarct before the method name
+

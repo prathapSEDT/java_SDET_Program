@@ -1,0 +1,71 @@
+String builder:
+
+String builder is called as mutable
+
+if the user try to modify the content of the source string, the actual data will get affected.
+
+string builder is called as not thread safe.
+
+String builder is As-synchronus
+
+
+when you feel that, even if there is no problem is loosing data , then we can use your string builder
+
+as it is async, performance is much greater, in the string builder.
+
+String builder is a inbuilt class avialble in java
+
+
+syntax:
+
+StringBuilder builder=new String Builder();
+
+
+now to create a string using string builder, user can pass the string as a input parameter to the string builder constructor.
+
+
+Here constructor is new Builder();, though it is an object, constructor will get triggger on the object creation.
+
+the other way of creating a string is using a method called append
+
+user is not required to store the value inside a variable, because it will modify the actual content of the string
+
+on the string builder by default , in the constructr there will be 16 chars space, when the user passes beyond 16 chars, aditional space will be allocated
+
+
+
+String buffer: it is called as thread safe
+it is sync process
+
+when there is multiple threads created, one after tghe other will get access.
+
+
+"ahfgvaaaayuibbbbbyhjucccccc"
+Use only string methods, try to print the out 
+a-5
+b-3
+c-5
+
+on the same string remove the duplicates
+
+
+string 1="india is growing"
+
+String 2="java is programming lanugae"
+
+from string two, what ever the chars i got as unique, remove those unique charcter on the string 1
+
+
+If the usier inputs a numberprint the even and odd numbers and also along with prime
+
+
+1.what are the different ways to check the string is empty or not
+2.what is the best way to check if the user given string is palindrome or not
+3.Can is use switch case on the string
+4.write a generic logic to check if string 1 is a subset of string 2
+5.Give 5 major difference between myutable and immutable
+6.String s1=null and string str=null, is this right representatin?
+7.List out the difference between builder and buffer ?
+8.Explain the concept of memeory sharing in the strings.
+
+

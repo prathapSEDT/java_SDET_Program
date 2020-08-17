@@ -1,0 +1,113 @@
+Regular Expression in java:
+
+Regex is the process of retriving and validating data on a string using pattern.
+
+User must need to define pattern, if this pattern is available on the source string, then the compiler will try to get the data from the source string.
+
+if ther is no matching pattern available, then compiler will never try to retive the data.
+
+The regex is coming from tehh pacakge called 
+java.util.regex
+
+what does this package contains?
+
+There are two major class available
+
+	* Pattern class
+	* Matcher class
+
+Steps:
+
+1.first understand how to create a pattern for the data that you are looking on the source.
+2.Using the pattern class, call the method called "compile()", this method will return a pattern object
+3.Use matcher class, to validate that if the pattern object which was created on the step 2 is availableon the source string string or not, by using a method called find()
+
+internally this findmethod is iterator.
+
+why it is iterator?
+
+Generally when the user written is exist more than one form.
+
+say supose i wnat to validate email id avilable on the source, 
+
+i wrote my pattern to validate my email id and also to retrive the email id.
+
+But here i 0-9]found that there 5 matches availble
+
+to get the data from the findmethod(), use the method called group()
+
+group()--only one match
+group(1)--- first occurance
+group(2)--- second
+
+
+
+all you want to understand here, the basic logic is derving from the pattern.
+
+one should know how to write a strong pattern.
+
+how to start writting pattern?
+1.character set
+
+in the regular usage we definetly go through the following
+
+A-Z, a-z,0-9
+
+to represent the character set, use []
+
+[A-Z][a-z][0-9]-- representing in this way called and representation
+[A-Za-z0-9]--- Or condition
+
+
+ex:
+My Pan Card Number is JHGNL7410E
+
+from this string i want to extract my pan number
+
+observe how the data is looking like.
+
+ther are 5 capitals letters
+4 numeics
+ending with a capital
+
+[A-Z][0-9][A-Z]
+
+why i wrote like this? i dont know whose pan number is going come there.my regular expression should a strong pattern in order to validate any matching data.
+
+2.Pairs ---{size}
+
+how many characters do you want from the source string for writtern pattern
+
+[A-Z]{5}[0-9]{4}[A-Z]{1}
+
+
+3.how to include special characters on the pattern===\special characters
+
+my date of birth is 08/09/1990
+
+here we have special characters like "/"
+
+now we need to retrive the DOB from the source string
+
+
+4.i dont know how many characters will i be getting on a pattern to determine the size
+
+for ex:
+my email id is firstname.lastname@companyname.com
+
+here i dont know how any chars will be available for firstname , lastname and company name
+
+
+to solve this problem use *
+
+* is used to include one or more chars  except a new line
+[a-z]*\.[a-z]*\@[a-z]\.com
+
+
+
+5.i have a string like
+
+I placed an order, and i am acknowledged with the message as Transaction id             :785962 Generated
+
+to include the spaces in the regex pattern,use \s
+

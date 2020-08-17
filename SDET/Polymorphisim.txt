@@ -1,0 +1,73 @@
+Polymorphisim:
+
+ability to have more than one form.
+
+in simple word on method with different behaviours or logic
+
+to define the concept of polymorphisi we should know about method overriding and overloading
+
+method overloading:
+
+same class
+same method name
+different parameters
+return type can be any
+access specifiers can be of any type
+
+
+
+method overriding:
+
+different class(inheritance)
+same method name
+same params
+return type can be a subtype
+private methods can not be overide
+lower to higher access modifiers are not allowed
+static method will not overide
+
+
+
+i have a parent class with 2 methods and child class which is overiding the parent class method1,
+
+mean that both parent and child class having same methods
+
+now if i create an object to the child class which method will get executed?
+
+remember that, compiler will always gives the priority of overrided methods only
+
+
+i have one more scenario, i have given refference to the parent class but i created object to my child class, questions are?
+
+Parent p=new Child();
+
+1.when i use my object which class methods will get visible?//parent
+2.when i have overided methods which class method will get executed?//only overrided method will get executed
+
+
+
+Role of a constructor in inheritance?
+
+
+we all know that when ever we craete a class , by default there will be a default no argument constructor wil be available in the background.
+
+when we have inheritance applied, the behaviour of the constructor will be different.
+
+if there is inheritance applied, parent class constructor having zero argument based constructor, child class is not having any constrcutor in place, 
+
+when we create an object to the child class, the parent class constructor will called
+
+why?
+
+by default when there is a child class constructor available, therre will be a method available called super(), which point to zero argument based constrcutor available at the parent class.
+
+
+
+
+parent class having parametrized constructor, child class is not having any constructor, what is the behaviour?
+
+Error, why ? when there is no constrcutor available for the child class, there will be a defauly constrcutor created and that default constrciutor will have super() method which is pointing to the parent class zero arguments constrcur ,
+
+as there is no 0 args constructor available in the parent class , error will be thrown,
+
+now the child class will demand, to havr parametrized constr in thee child class.
