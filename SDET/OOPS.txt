@@ -1,0 +1,107 @@
+I want to make my class to allow th e user to create an object only once, how can io do that?
+
+Reasson when i create multiple object evry time  a memory refference will get created.
+
+so that the performance will get degarded, to avoid it we use a concept called "single ton class"
+
+
+single ton class will allow the user to create an object only once. 
+
+how exactly a single ton class will look like?
+
+1.all the variable will be of private type, when we make any class memebers to be as private, it can not accessed out side of your class
+
+2.make the constructor to e a private, so that user will be restricted in creating an object
+
+3.have a class object of type static
+
+4..have a method called getInstance where you return the class object and ensure that this method is also a static method
+
+onn the step 4, write a logic where you need to verify , if the class object is not null.
+
+
+
+OOPS in java?
+
+OOP stands for object oriented programing
+
+OOPS is used write or create object that contais both mrthos and variables
+
+oops have several advantages
+
+	* faster and easy to exexute
+	* provide crystal clear structure for the programs
+	* It implements DRY prinicple
+
+DRY----- Dont Repeat Your Self
+
+it eans dont duplicate the code, analyse the reusability of the code and call whene ever it is required.
+
+	* Main purpose of this oops concept is less code and more reusability
+
+
+
+What are the major pillars of Java OOPS?
+
+* class
+* object
+* methods
+* Inheritance
+* Polymorphisim
+* Encapsulation
+* Interfaces
+* Abstarction
+
+Inheritance:
+it is process of acquiring the properties of parent class by a child class
+parent class is called as "base class" child class is called deriveed class
+
+to implement inheritance,we shoud use a keyword called as extends btwn parent and child
+
+
+Syntax:
+
+Class child extends parent{
+
+
+}
+
+
+when we create an object to child class, this child class object have capaicity to access the properties of the parent class
+
+
+
+
+car common behaviours:
+
+vechile
+====================================
+1.start
+2.stop
+3.lightson
+4.lightsoff
+5.shiftgear
+6.apply breakes
+7.apply ex
+=====================================
+
+Maruthi
+1.AC switch on/off
+2.Reverse gear camera
+3.rear screenwiper
+
+=====================================
+MG Hector
+
+1.360Degress view camera
+2.side mirrors with blind spot capture
+3.Alexa enabled fully
+4.cruze control
+5.Alchol detection
+6.face recognization switch off  and on
+========================================
+
+
+
+
+
