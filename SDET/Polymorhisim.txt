@@ -1,0 +1,103 @@
+To implement inheritance we need make the child class to get extends wit the parent class
+key word extends is used to estlablish the relation between parent class and child class
+
+steps:
+===============
+
+1.create a child class
+2.use the extends keyword and make use of parent class
+3.to test inheritance is applied, create an object to the child class, so that verify if you can see all teh methods and variable s from both the parent class and the child class
+
+1.Single level inheritance
+2.multiplevel
+3.hierarchial
+4.multiple inheritance
+5.hybrid
+
+4 and 5 is not possible in java
+
+1,2,3 are possible
+
+
+singel level inheritance:
+
+one parent and only one child.
+
+create a child class
+create a parent class
+extend the child class with the parent class
+object created to the child class, will have tendency to get the properties of both parent an dchild
+
+
+polymorphisim:
+==========================
+having ability to have more than one form  is called polymorphisim.
+
+exmaple when i developed my framework, i started getting data from the excel workbook.,
+latter i reliazed that getting data from a json is optimal.
+but latter i found that most of the of the testcases are using excel as a datasource.
+
+now if i modify the existing logic which was written in java excel code, all other testcases will get failed.
+
+now with out changing the main method which was creted already we need to write a new logic with the same name
+
+to do so, we use the concept of polymorphisim
+
+* method overloading
+* method overriding
+
+method-overloading:
+*************************
+
+no inheritance required
+same class
+same method name
+different parameters
+may or may not be same access specifiers
+may or may not be same having return type
+
+
+method-overriding
+*************************
+
+inheritance required
+different class
+same method name
+same parameters
+higher to lower  access specifiers are allowed, no lower to higher
+only subtypes are allowed to have a return types no others are allowed.
+
+private method can not be override
+static methods can not be override
+
+on overiding use the annotation called 
+@Override
+
+this annotation will check wheter you implemented overriding principles correctly or not
+
+Role of constructor in inheritance
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
